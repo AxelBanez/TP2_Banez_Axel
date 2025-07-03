@@ -1,0 +1,172 @@
+    1  ls -l
+    2  fdisk -l
+    3  sudo fdisñ -l
+    4  sudo fdisk -l
+    5  sudo fdisk /dev/sdd
+    6  free
+    7  free -h
+    8  sudo mkswap /dev/sdd1
+    9  free -h
+   10  sudo swapon /dev/sdd1
+   11  free -h
+   12  swapon -s
+   13  dd if=/dev/zero of=swap.file bs=1 count=1024
+   14  ls -lh
+   15  sudo swapon swap.file
+   16  free -h
+   17  mkswap swap.file
+   18  sudo swapon swap.file
+   19  free -h
+   20  mkswap swap.file
+   21  ls -lh
+   22  cat swap.file 
+   23  mkswap swap.file
+   24  sudo fdisñ -l
+   25  sudo fdisk -l
+   26  swapon -s
+   27  cat /proc/swaps
+   28  dd if=/dev/zero of=swap.file bs=1 count=1024
+   29  ls -lh
+   30  dd if=/dev/zero of=swap.file bs=1M count=1024
+   31  ls .lh
+   32  ls -lh
+   33  mkswap swap.file
+   34  swapon swap.file
+   35  free -h
+   36  swapon -f
+   37  sudo swapon swap.file
+   38  free -h
+   39  swapon -f
+   40  cat /proc/sys/vm/swappiness 
+   41  sudo fdisk -l
+   42  sudo fdisk /dev/sdc
+   43  sudo wipefs -a /dev/sdc1
+   44  sudo pvcreate /dev/sdd2 /dev/sdd3 /dev/sdd5 /dev/sdd6 /dev/sdc1 /dev/sdc2
+   45  sudo pvs
+   46  sudo vgcreate vg_datos /dev/sdc1 /dev/sdd2
+   47  sudo vgs
+   48  sudo pvs
+   49  udo vgcreate vg_web /dev/sdc2
+   50  sudo vgcreate vg_web /dev/sdc2
+   51  sudo pvs
+   52  sudo lvs
+   53  sudo lvcreate -L 1G vg_web -n lv_web1
+   54  sudo lvcreate -L 512M vg_web -n lv_web2
+   55  sudo lvcreate -L 512M vg_web -n lv_web3
+   56  sudo lvs
+   57  sudo pvs
+   58  sudo fdisk -l
+   59  sudo mkfs.ext4 /dev/mapper/vg_web-lv_web1
+   60  sudo mkfs.ext4 /dev/mapper/vg_web-lv_web2
+   61  sudo mkfs.ext4 /dev/mapper/vg_web-lv_web3
+   62  sudo lsblk -f
+   63  exit
+   64  sudo pvs
+   65  sudo vgs
+   66  sudo lvs
+   67  ls -l
+   68  exit
+   69  ls -l
+   70  df -h
+   71  history 
+   72  free
+   73  sudo lsblk -f
+   74  sudo pvs
+   75  exit
+   76  ls -l
+   77  cat swap.file 
+   78  ei
+   79  exit
+   80  ls -a
+   81  ls -l
+   82  mkdir repogit
+   83  ls -l
+   84  cd repogit/
+   85  ls -l
+   86  git clone git@github.com:AxelBanez/TP2_Banez_Axel.git
+   87  ls -l
+   88  history 
+   89  cd
+   90  sudo pvs
+   91  sudo vgs
+   92  sudo lvs
+   93  cd repogit/
+   94  git clone https://github.com/AxelBanez/TP2_Banez_Axel.git
+   95  ls -l
+   96  sudo pvs > pvs.txt
+   97  ls -l
+   98  cat pvs.txt 
+   99  sudo vgs > vgs.txt
+  100  sudo lvs > lvs.txt
+  101  history > historial_lvm.txt
+  102  ls -l
+  103  git add pvs.txt
+  104  git add .
+  105  cd TP2_Banez_Axel/
+  106  ls -l
+  107  lsexi
+  108  clear
+  109  exit
+  110  ls -l
+  111  cd repogit/
+  112  ls -l
+  113  mv *.txt TP2_Banez_Axel/
+  114  ls -l
+  115  cd TP2_Banez_Axel/
+  116  ls -l
+  117  git add pvs.txt 
+  118  git commit -m "Subiendo archivo pvs.txt"
+  119  git config --global user.email "banezaxeloscco@gmail.com"
+  120  git config --global user.name "AxelBanez"
+  121  git push
+  122  cd
+  123  ls -a
+  124  cd .ssh/
+  125  ls -l
+  126  cd
+  127  ssh-keygen -t ed25519
+  128  cat $HOME/.ssh/*.pub 
+  129  ls -l
+  130  cd repogit/
+  131  ls -l
+  132  cd TP2_Banez_Axel/
+  133  ls -l
+  134  git push
+  135  ls -l
+  136  cd
+  137  cd repogit/
+  138  git clone git@github.com:AxelBanez/TP2_Banez_Axel.git
+  139  cd
+  140  ls -la
+  141  cd .ssh/
+  142  ls -la
+  143  cat id_ed25519.pub 
+  144  cd
+  145  cd repogit/TP2_Banez_Axel/
+  146  ls -l
+  147  git push
+  148  git add .
+  149  git push
+  150  git remote set-url origin git@github.com:AxelBanez/TP2_Banez_Axel.git
+  151  git push
+  152  git status
+  153  cd
+  154  ls -l
+  155  cd repogit/
+  156  rm -rf TP2_Banez_Axel
+  157  ls -l
+  158  git clone git@github.com:AxelBanez/TP2_Banez_Axel.git
+  159  cd TP2_Banez_Axel/
+  160  sudo pvs
+  161  history 
+  162  ls -l
+  163  sudo pvs
+  164  sudo > pvs.txt
+  165  sudo pvs > pvs.txt
+  166  git add pvs.txt 
+  167  git commit -m "Subiendo archivo pvs.txt"
+  168  git push
+  169  sudo vgs > vgs.txt
+  170  sudo lvs > lvs.txt
+  171  history 
+  172  history > historial_lvm.txt
